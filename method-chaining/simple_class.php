@@ -15,8 +15,13 @@ class Bike{
       }
 
       public function get_bike_info(){
-          echo "Bike name ".$this->name ."<br>" . "Brand Name ". $this->brand. "<br>" . " Model ".$this->model;
+          echo "Bike Name: ".$this->name ."<br>" . "Brand Name: ". $this->brand. "<br>" . " Model: ".$this->model;
       }
 }
 
 $bike_info = new Bike();
+
+$bike_info->set_name('Suzuki GSX R150 SP with ABS');
+$bike_info->set_brand('Suzuki');
+$bike_info->set_model('GSX R150');
+$bike_info->get_bike_info();
